@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Visualizing Weather</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">A Latitudinal Analysis of Weather</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <section class="row">
+          <div class="col-lg-7 col-md-12">
+            <div class="description-content">
+              <h2 class="description-header">Summary: Latitude vs. Humidity</h2>
+              <hr>
+              <img src="Resources/assets/fig2.png" alt="Latitude vs. Humidity" class="float-left">
+              <p>There's less of an observable correlation between latitude and humidity, but it's interesting to note that the vast majority of humidity logs this date (1/26/20) were between 60 and 100 percent.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <section id="imageNav-area">
+                <div class="imageNav-content">
+                  <h2 class="imageNav-header">Visualizations</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href=temperature.html>
+                                <img src="Resources/assets/fig1.png" alt="Latitude vs. Max Temperature", title="Latitude vs. Max Temperature" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href=humidity.html>
+                                <img src="Resources/assets/fig2.png" alt="Latitude vs. Humidity", title="Latitude vs. Humidity" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href=cloudiness.html>
+                                <img src="Resources/assets/fig3.png" alt="Latitude vs. Cloudiness", title="Latitude vs. Cloudiness" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href=windspeed.html>
+                                <img src="Resources/assets/fig4.png" alt="Latitude vs. Wind Speed", title="Latitude vs. Wind Speed" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>       
+          </div>
+        </section>
+
+    <footer>
+        <div class="fixed-bottom">&copy; copyright keatbro 2020</div>
+    </footer>
+    
+</body>
+
+</html>
